@@ -8,226 +8,273 @@
   </head>
   <body>
     <!--HEADER START-->
-    <header class="main-header">
+    <header class="header">
       <nav class="navigation">
-        <a class="header-logo" href="#">
-          <h1 class="visually-hidden">
-            Интернет магазин Nёrd's
-          </h1>
-          <img class="header-logo-image" src="#" alt="Nёrd's" />
+        <!-- logo -->
+        <a class="logo">
+         <img class="header-logo-image" src="#" alt="Nёrd's" />
         </a>
-        <ul class="navigation-menu">
-          <li class="navigation-menu-item">
-            <a class="navigation-link" href="#">Студия</a>
+        <!-- menu -->
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="link" href="#">Студия</a>
           </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-link" href="#">Клиенты</a>
+          <li class="menu-item">
+            <a class="link" href="#">Клиенты</a>
           </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-link" href="#">Магазин</a>
+          <li class="menu-item">
+            <a class="link" href="#">Магазин</a>
           </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-link" href="#">Контакты</a>
+          <li class="menu-item">
+            <a class="link" href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="navigation-user">
-          <li class="navigation-user-item">
-            <img class="basket" src="#" alt="Корзина" />
-            <a class="navigation-user-link" href="#">Корзина</a>
+        <!-- basket -->
+        <ul class="actions">
+          <li class="actions-item">
+            <!-- Сделать через псевдоэлемент -->
+            <img class="actions-basket" src="#" alt="Корзина" />
+            <a class="actions-link" href="#">Корзина</a>
           </li>
         </ul>
       </nav>
     </header>
     <!--HEADER END-->
     <!--MAIN START-->
-    <main>
+    <main class="main">
+      <h1 class="visually-hidden">Интернет магазин Nerds</h1>
       <!--sliders promo start-->
-      <section class="section-promo">
-        <ul class="list">
-          <li class="slide1-list">
-            <p class="slide1-advantages">Долго, дорого, скрупулезно.</p>
-            <p class="slide1-discription">
-              Математически выверенный дизайн<br />
-              для вашего сайта или мобильного приложения.
-            </p>
-            <a class="button" href="#">Узнать больше</a>
-            <img class="slide1-image" src="#" alt="Слайд" />
-          </li>
-          <li class="slide2-list">
-            <p class="slide2-advantages">Любим математику как никто другой</p>
-            <p class="slide2-discription">
-              Никакого креатива, только математические формулы<br />
-              для расчета идеальных пропорций
-            </p>
-            <a class="button" href="#">Узнать больше</a>
-            <img class="slide2-image" src="#" alt="Слайд" />
-          </li>
-          <li class="slide3-list">
-            <p class="slide3-advantages">Только ночь, только хардкор</p>
-            <p class="slide3-discription">
-              Работать днем, как все? Мы против этого.<br />
-              Ближе к полуночи работа только начинается.
-            </p>
-            <a class="button" href="#">Узнать больше</a>
-            <img class="slide3-image" src="#" alt="Слайд" />
-          </li>
-        </ul>
+      <section class="promo">
+        <h2 class="vh">Наши преимущества</h2>
+        
+        <div class="promo-slider">
+          <!-- promo slider -->
+          <ul class="promo-list">
+            <li class="promo-slide  active">
+              <div class="promo-slide-content">
+                <p class="promo-slide-title">Долго, дорого, скрупулезно.</p>
+                <p class="promo-slide-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a href="#" class="button button-red">Узнать больше</a>
+              </div>
+            </li>
+            <li class="promo-slide">
+              <div class="promo-slide-content">
+                <p class="promo-slide-title">Любим математику как никто другой</p>
+                <p class="promo-slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                <a href="#" class="button button-red">Узнать больше</a>
+              </div>
+            </li>
+            <li class="promo-slide">
+              <div class="promo-slide-content">
+                <p class="promo-slide-title">Только ночь,
+                  только хардкор</p>
+                <p class="promo-slide-text">Работать днем, как все? Мы против этого.
+                  Ближе к полуночи работа только начинается.</p>
+                <a href="#" class="button button-red">Узнать больше</a>
+              </div>
+            </li>
+          </ul>
+          <!-- slider controls -->
+          <ol class="promo-controls">
+            <li class="promo-controls-item active">
+              <button class="promo-controls-btn">
+                <span class="vh">Слайдер 1</span>
+              </button>
+            </li>
+            <li class="promo-controls-item">
+              <button class="promo-controls-btn">
+                <span class="vh">Слайдер 2</span>
+              </button>
+            </li>
+            <li class="promo-controls-item">
+              <button class="promo-controls-btn">
+                <span class="vh">Слайдер 3</span>
+              </button>
+            </li>
+          </ol>
+        </div>
       </section>
       <!--sliders promo end-->
 
       <!--services of list start-->
-      <section class="services">
-        <ul class="list-services">
-          <li class="web-list">
-            <img class="web-image" src="#" alt="Веб-сайты" />
-            <h2 class="web-promo">Веб-сайты</h2>
-            <p class="web-description">
-              Мир никогда не будет прежним<br />
+      <section class="services-list">
+        <h2 class="vh">Наши услуги</h2>
+
+        <ul class="list-services-item">
+          <li class="services-item">
+            <img class="services-item-image" src="#" alt="Веб-сайты" width="300" height="146"/>
+            <h3 class="service-item-title">Веб-сайты</h3>
+            <p class="service-item-text">
+              Мир никогда не будет прежним
               после того как увидит ваш сайт!
             </p>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button-red" href="#">Заказать</a>
           </li>
-          <li class="apps-list">
-            <img class="apps-image" src="#" alt="Приложения" />
-            <h3 class="apps-promo">Приложения</h3>
-            <p class="apps-description">
-              Покорите топ-10 приложений<br />
+          <li class="services-item">
+            <img class="services-item-image" src="#" alt="Приложения" width="300" height="146"/>
+            <h3 class="service-item-title">Приложения</h3>
+            <p class="service-item-text">
+              Покорите топ-10 приложений
               в AppStore и Google Play
             </p>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button-green" href="#">Заказать</a>
           </li>
-          <li class="presentations-list">
-            <img class="presentations-image" src="#" alt="Презентации" />
-            <h3 class="presentations-promo">Презентации</h3>
-            <p class="presentations-description">
-              Вы даже не подозреваете,<br />
+          <li class="services-item">
+            <img class="services-item-image" src="#" alt="Презентации" width="300" height="146"/>
+            <h3 class="service-item-title">Презентации</h3>
+            <p class="service-item-text">
+              Вы даже не подозреваете,
               насколько вы изумительны!
             </p>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button-yellow" href="#">Заказать</a>
           </li>
         </ul>
       </section>
       <!--services of list end-->
 
       <!--advertising block start-->
-      <section class="company-nerds-block">
-        <ul class="company-nerds-list">
-          <li class="company-nerds-about">
-            <p class="company-nerds-title">
-              Мы — маленькая, но гордая<br />дизайн-студия из Краснодара.
+      <section class="about">
+        <h2 class="vh">О нас</h2>
+        <!-- item left -->
+        <div class="company-column">
+            <p class="company-title">
+              Мы — маленькая, но гордая дизайн-студия из Краснодара.
             </p>
-            <p class="company-nerds-description">
+            <p class="company-text">
               Исповедуем принципы минимализма и чистоты. Ставим математический
-              расчет<br />превыше креатива. Работаем не покладая рук, как
+              расчет превыше креатива. Работаем не покладая рук, как
               роботы.
             </p>
+            <h3 class="company-lead">Выполняем заказы на разработку:</h3>
+            <ul class="company-list">
+              <li class="company-item">Веб-сайтов любой сложности</li>
+              <li class="company-item">Мобильных приложений для iOS и Android</li>
+              <li class="company-item">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+        </div>
+        <!-- item right -->
+        <div class="company-column"> 
+          <img class="company-logo" src="#" alt="Nёrds logo" width="360" height="208"/>
+        <h3 class="company-lead">с 2004 года Любим точность во всем:</h3>
+        <ul class="compamy-stats">
+          <li class="compamy-stats-item">
+            <p class="compamy-stats-name">Уровень самоотдачи</p>
+            <p class="compamy-stats-value">146<sup>%</sup></p>
           </li>
-          <li class="orders-list">
-            <h2 class="orders">Выполняем заказы на разработку:</h2>
-            <p class="web">Веб-сайтов любой сложности</p>
-            <p class="apps">Мобильных приложений для iOS и Android</p>
-            <p class="slide-show">
-              Слайдшоу и видео для корпоративных презентаций
+          <li class="compamy-stats-item">
+            <p class="compamy-stats-name">Соблюдение сроков</p>
+            <p class="compamy-stats-value">100<sup>%</sup></p>
+          </li>
+          <li class="compamy-stats-item">
+            <p class="compamy-stats-name">
+              Минимальная предоплата
             </p>
+            <p class="compamy-stats-value">50<sup>%</sup></p>
           </li>
         </ul>
-        <a class="nerds-company-logo" href="#">
-          <span class="visually-hidden">Логотип Nerds</span>
-          <img class="nerds-logo-image" src="#" alt="Nёrd's logo" />
-        </a>
-        <h2 class="company-title">с 2004 года Любим точность во всем:</h2>
-        <dl class="compamy-statistics">
-          <div class="compamy-statistics-item">
-            <dt class="compamy-statistics-description">Уровень самоотдачи</dt>
-            <dd class="compamy-statistics-value">146<sup>%</sup></dd>
-          </div>
-          <div class="compamy-statistics-item">
-            <dt class="compamy-statistics-description">Соблюдение сроков</dt>
-            <dd class="compamy-statistics-value">100<sup>%</sup></dd>
-          </div>
-          <div class="compamy-statistics-item">
-            <dt class="compamy-statistics-description">
-              Минимальная предоплата
-            </dt>
-            <dd class="compamy-statistics-value">50<sup>%</sup></dd>
-          </div>
-        </dl>
-      </section>
+        </div>
       <!--advertising block end-->
 
       <!--clients list block start-->
-      <section class="clients-list">
-        <ul class="html-academy-block">
-          <li class="html-academy">
-            <a class="html-academy-link" href="">
-              <img class="html-academy-logo" src="#" alt="html-Academy-logo" />
+      <section class="clients">
+        <h2 class="vh">Наши клиенты</h2>
+
+        <ul class="clients-list">
+          <li class="clients-item">
+            <a class="clients-link" href="#" title="HTMLAcademy">
+              <img class="clients-logo" src="#" alt="HTMLAcademy" width="199" height="57" />
             </a>
           </li>
-          <li class="barbershop-borodinski">
-            <a class="barbershop-borodinski-link" href="#">
-              <img
-                class="barbershop-borodinski-logo"
-                src="#"
-                alt="barbershop-borodinski-logo"
-              />
+          <li class="clients-item">
+            <a class="clients-link" href="#" title="Barbershop_Borodinski">
+              <img class="clients-logo" src="#" alt="Barbershop_Borodinski" width="199" height="57" />
             </a>
           </li>
-          <li class="pink">
-            <a class="pink-link" href="#">
-              <img class="pink-logo" src="#" alt="pink-logo" />
+          <li class="clients-item">
+            <a class="clients-link" href="#" title="Pink">
+              <img class="clients-logo" src="#" alt="Pink" width="199" height="57" />
             </a>
           </li>
-          <li class="mishka">
-            <a class="mishka-link" href="#">
-              <img class="mishka-logo" src="#" alt="mishka-logo" />
+          <li class="clients-item">
+            <a class="clients-link" href="#" title="Mishka">
+              <img class="clients-logo" src="#" alt="Mishka" width="199" height="57" />
             </a>
-          </li>
+          </li>  
         </ul>
       </section>
       <!--clients list block end-->
     </main>
     <!--MAIN END-->
     <!--FOOTER START-->
-    <footer class="page-footer">
-      <!--map block start-->
-      <section= class="map">
-        <image class="map-img" href="#" alt="карта">
-      </section>
-      <!--map block end-->
+    <footer class="footer">
+      <!--Contacts start-->
+      <section class="footer-contacts">
+        <h2 class="vh">Контакты</h2>
 
-      <!--nerds contacts start-->
-      <section class="nerds-contacts">
-        <p class="nerds-design-studio">nerds-design-studio</p>
-        <p class="contact-text">наб. Реки Карповки, 5 лит П, Санкт-Петербург </p>
-        <p class="contact-phone"><a class="phone-link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a></p>
-        <a class="contact-button" href="#">Напишите нам</a>
-      </section>
-      <!--nerds contacts end-->
+        <div class="footer-contacts-block">
+          <h3 class="footer-contacts-title">NЁRDS DESIGN STUDIO</h3>
+          <p class="footer-contacts-addres">наб. Реки Карповки, 5 лит П, Санкт-Петербург +7 800 555-86-28</p>
+          <a href="tel:+78005558628" class="footer-contacts-phone"></a>
+          <a href="#" class="button footer-contacts-button">Напишите нам</a>
+        </div>
 
-      <!--social contacts start-->
-      <section class="social-contacts">
-        <ul class="social-links">
-          <li class="sicial-link-item">
-            <a class="social-link-vk" href="https://vk.com">
-              <img class="vk-logo" src="#" alt="Вконтакте">
-            </a>
-          </li>
-          <li class="sicial-link-item">
-            <a class="social-link-facebook" href="https://www.facebook.com">
-              <img class="facebook-logo" src="#" alt="Facebook">
-            </a>
-          </li>
-          <li class="sicial-link-item">
-            <a class="social-link-instagram" href="https://www.instagram.com">
-              <img class="instagram-logo" src="#" alt="Instagram">
-            </a>
-          </li>
-        </ul>
-        <p class="social-offering-title">Давайте дружить, это выгодно!</p>
-        <p class="social-offering-text">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="map" id="map">
+          <img src="#" alt="Наш адрес" class="map-image" width="1440" height="416">
+        </div>
       </section>
-        <!--social contacts end-->
-    </footer>
+      <!--Contacts end-->
+
+      <!--Connect start-->
+      <section class="nerds-connect">
+          <h2 class="vh">Как связаться с нами</h2>
+
+          <ul class="social">
+            <li class="social-item">
+              <a href="#" class="social-link" title="">
+              <!-- Здесь будет иконка -->
+            </a>
+            <a href="#" class="social-link" title="">
+              <!-- Здесь будет иконка -->
+            </a>
+            <a href="#" class="social-link" title="">
+              <!-- Здесь будет иконка -->
+            </a>
+          </li>
+          </ul>
+          <p class="footer-connect-offering">
+              <span class="footer-connect-lead">Давайте дружить, это выгодно!</span>
+              Скидка 10% для друзей из социальных сетей.
+          </p>
+      </section>
+      <!--Connect end-->
+    
     <!--FOOTER END-->
+    
+    <!-- Popup -->
+    <div class="overlay">
+      <section class="modal">
+
+        <div class="modal-header">
+        <h2 class="modal_title">Напишите нам</h2>
+        <button class="modal_exit"><!-- image --></button>
+        </div>
+
+        <form action="#" class="modal_form">
+          <div class="modal-form-group">
+            <label for="fullname" class="modal-form-label">Ваше имя</label>
+            <input class="modal-form-field" type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+          </div>
+          <div class="modal-form-group">
+            <label for="fullname" class="modal-form-label">Ваш email:</label>
+            <input class="modal-form-field" type="text" name="fullname" id="fullname" placeholder="email@example.com я">
+          </div>
+          <div class="modal-form-group">
+            <label for="massage" class="modal-form-label">Текст письма:</label>
+            <textarea class="modal-form-field modal-form-textarea" name="massage" id="massage" placeholder="В свободной форме"></textarea>
+          </div>
+          <button type="submit" class="modal-form-button">Отправить</button>
+        </form>
+      </section>
+    </div>
   </body>
 </html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.css"
+    />
+    <title>Catalog</title>
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header class="catalog-header">
+      <nav class="navigation">
+        <!-- logo -->
+        <a class="logo">
+          <img src="#" alt="Nerds" class="header-logo-image" />
+        </a>
+        <!-- menu -->
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="link" href="#">Студия</a>
+          </li>
+          <li class="menu-item">
+            <a class="link" href="#">Клиенты</a>
+          </li>
+          <li class="menu-item">
+            <a class="link" href="#">Магазин</a>
+          </li>
+          <li class="menu-item">
+            <a class="link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <!-- basket -->
+        <ul class="actions">
+          <li class="actions-item">
+            <!-- Сделать через псевдоэлемент -->
+            <img class="actions-basket" src="#" alt="Корзина" />
+            <a class="actions-link" href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="title">Магазин готовых шаблонов</h1>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main class="main">
+    <form class="filter-price">
+      <!-- filter-price -->
+      <fieldset class="filter-range">
+        <legend class="header-range">Стоимость</legend>
+        <div class="price-slider"></div>
+        <label>от<input type="text" value="0" /></label>
+        <label>до<input type="text" value="100" /></label>
+      </fieldset>
+      <fieldset class="mesh">
+        <legend class="selection-mesh">Сетка:</legend>
+        <label><input type="radio" name="area" checked />Адаптивная</label>
+        <label><input type="radio" name="area" />Фиксированная</label>
+        <label><input type="radio" name="area" />Резиновая</label>
+      </fieldset>
+      <fieldset class="peculiarities">
+        <legend class="selection-peculiarities">Особенности:</legend>
+        <label><input type="checkbox" name="area" checked />Слайдер</label>
+        <label><input type="checkbox" name="area" />Блок преимуществ</label>
+        <label><input type="checkbox" name="area" checked />Новости</label>
+        <label><input type="checkbox" name="area" />Галерея</label>
+        <label><input type="checkbox" name="area" />Корзина</label>
+      </fieldset>
+      <a href="#" class="button button-gray">Показать</a>
+    </form>
+
+    <!-- catalog sorting -->
+    <section class="catalog">
+      <h2 class="vh">Каталог шаблонов</h2>
+
+      <div class="catalog-sorting">
+        <p>Сортировать:</p>
+        <ul class="catalog-sorting-list">
+          <li class="sorting-item">
+            <a href="#" class="sortting-link">По цене</a>
+          </li>
+          <li class="sorting-item">
+            <a href="#" class="sortting-link">По типу</a>
+          </li>
+          <li class="sorting-item">
+            <a href="#" class="sortting-link">По названию</a>
+          </li>
+        </ul>
+
+        <ul class="direction-sorting-list">
+          <li class="direction-item">
+            <a href="#" class="direction-icon">
+              <img src="#" alt="По возрастанию" class="icon-top" />
+            </a>
+          </li>
+          <li class="direction-item">
+            <a href="#" class="direction-icon">
+              <img src="#" alt="По убыванию" class="icon-bottom" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- cards -->
+      <ul class="cards">
+        <li class="card">
+          <div class="card-header">
+            <img src="#" alt="Заголовок" class="card-image-top" />
+            <img src="#" alt="Карточка седоны" class="card-iamge-preview" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Sedona</h3>
+            <p class="card-text">Информационный сайт для туристов</p>
+            <a href="" class="btn btn-red card-btn">9 900 ₽</a>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-header">
+            <img src="#" alt="Заголовок" class="card-image-top" />
+            <img src="#" alt="Карточка пинк" class="card-iamge-preview" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Pink App</h3>
+            <p class="card-text">
+              Продуктовый лендингприложения для iOS и Android
+            </p>
+            <a href="" class="btn btn-red card-btn">9 900 ₽</a>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-header">
+            <img src="#" alt="Заголовок" class="card-image-top" />
+            <img src="#" alt="Карточка borodinski" class="card-iamge-preview" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Borodinski</h3>
+            <p class="card-text">Мужские парикмахерские</p>
+            <a href="" class="btn btn-red card-btn">9 900 ₽</a>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-header">
+            <img src="#" alt="Заголовок" class="card-image-top" />
+            <img src="#" alt="Карточка mishka" class="card-iamge-preview" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Mishka</h3>
+            <p class="card-text">Интернет-магазин вязаных игрушек</p>
+            <a href="" class="btn btn-red card-btn">9 900 ₽</a>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-header">
+            <img src="#" alt="Заголовок" class="card-image-top" />
+            <img src="#" alt="Карточка A+" class="card-iamge-preview" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">A plus</h3>
+            <p class="card-text">Лендинг курсов повышения квалификации</p>
+            <a href="" class="btn btn-red card-btn">9 900 ₽</a>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-header">
+            <img src="#" alt="Заголовок" class="card-image-top" />
+            <img src="#" alt="Карточка кваст" class="card-iamge-preview" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Кваст</h3>
+            <p class="card-text">Промо-сайт производителя крафтового кваса</p>
+            <a href="" class="btn btn-red card-btn">9 900 ₽</a>
+          </div>
+        </li>
+      </ul>
+      
+      <!-- pagination -->
+      <ul class="pagination">
+        <li class="pag-item"><a href="#">1</a></li>
+        <li class="pag-item"><a href="#">2</a></li>
+        <li class="pag-item"><a href="#">3</a></li>
+        <li class="pag-item"><a href="#"> Следующая </a></li>
+      </ul>
+    </section>
+  </main>
+    <!-- MAIN END -->
+     <!--FOOTER START-->
+     <footer class="footer">
+      <!--Contacts start-->
+      <section class="footer-contacts">
+        <h2 class="vh">Контакты</h2>
+
+        <div class="footer-contacts-block">
+          <h3 class="footer-contacts-title">NЁRDS DESIGN STUDIO</h3>
+          <p class="footer-contacts-addres">наб. Реки Карповки, 5 лит П, Санкт-Петербург +7 800 555-86-28</p>
+          <a href="tel:+78005558628" class="footer-contacts-phone"></a>
+          <a href="#" class="button footer-contacts-button">Напишите нам</a>
+        </div>
+
+        <div class="map" id="map">
+          <img src="#" alt="Наш адрес" class="map-image" width="1440" height="416">
+        </div>
+      </section>
+      <!--Contacts end-->
+
+      <!--Connect start-->
+      <section class="nerds-connect">
+          <h2 class="vh">Как связаться с нами</h2>
+
+          <ul class="social">
+            <li class="social-item">
+              <a href="#" class="social-link" title="">
+              <!-- Здесь будет иконка -->
+            </a>
+            <a href="#" class="social-link" title="">
+              <!-- Здесь будет иконка -->
+            </a>
+            <a href="#" class="social-link" title="">
+              <!-- Здесь будет иконка -->
+            </a>
+          </li>
+          </ul>
+          <p class="footer-connect-offering">
+              <span class="footer-connect-lead">Давайте дружить, это выгодно!</span>
+              Скидка 10% для друзей из социальных сетей.
+          </p>
+      </section>
+      <!--Connect end-->
+    
+    <!--FOOTER END-->
+    
+    <!-- Popup -->
+    <div class="overlay">
+      <section class="modal">
+
+        <div class="modal-header">
+        <h2 class="modal_title">Напишите нам</h2>
+        <button class="modal_exit"><!-- image --></button>
+        </div>
+
+        <form action="#" class="modal_form">
+          <div class="modal-form-group">
+            <label for="fullname" class="modal-form-label">Ваше имя</label>
+            <input class="modal-form-field" type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+          </div>
+          <div class="modal-form-group">
+            <label for="fullname" class="modal-form-label">Ваш email:</label>
+            <input class="modal-form-field" type="text" name="fullname" id="fullname" placeholder="email@example.com я">
+          </div>
+          <div class="modal-form-group">
+            <label for="massage" class="modal-form-label">Текст письма:</label>
+            <textarea class="modal-form-field modal-form-textarea" name="massage" id="massage" placeholder="В свободной форме"></textarea>
+          </div>
+          <button type="submit" class="modal-form-button">Отправить</button>
+        </form>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
